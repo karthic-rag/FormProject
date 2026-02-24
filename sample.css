@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Sora:wght@100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans";
+}
+
+html {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+h1 {
+  background-color: #3b82f6;
+  color: #f1f5f9;
+  padding: 10px;
+  border: 2px solid #1e293b;
+  margin: 15px auto;
+  text-align: center;
+  max-width: 520px;
+  box-shadow: 3px 3px 15px 2px #1e4788;
+  border-radius: 15px;
+}
+
+fieldset {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #1e293b;
+}
+
+legend {
+  padding: 10px;
+  background-color: red;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+td {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: medium;
+  font-weight: 600;
+  resize: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: #0f172a;
+  font-size: medium;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+td > label {
+  font-size: large;
+  color: #f59e0b;
+  font-weight: 500;
+}
+
+td > input + label {
+  font-size: large;
+  color: #f1f5f9;
+  font-weight: 500;
+}
+
+td > input:checked {
+  transform: scale(1.5);
+}
+
+input:focus ~ p {
+  display: block;
+}
+
+p {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: green;
+  border-radius: 10px;
+  display: none;
+  font-size: medium;
+  font-weight: 500;
+}
+img {
+  width: 25px;
+  height: 25px;
+  margin: 5px 0;
+}
+
+input:valid ~ .correct {
+  border: 3px solid green;
+  border-radius: 50%;
+}
+input:invalid ~ .wrong {
+  border: 3px solid red;
+  border-radius: 50%;
+}
+
+h2 {
+  width: 100%;
+  border: 2px solid green;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: medium;
+  font-weight: 600;
+  color: black;
+}
+
+input:invalid,
+select:invalid {
+  border: 2px solid red;
+}
+
+input:valid,
+select:valid {
+  border: 2px solid green;
+}
+
+input:optional,
+textarea:optional {
+  border: 2px dashed green;
+}
+
+input[name="mode"],
+#gender {
+  width: auto;
+}
+
+input[name="mode"] ~ label,
+#gender ~ label {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #3b82f6;
+  color: #f1f5f9;
+  border: 1px solid #1e293b;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 8px;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}

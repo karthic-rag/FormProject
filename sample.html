@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Registration Form</title>
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/5969/5969113.png"
+    />
+    <link rel="stylesheet" href="./sample.css" />
+  </head>
+  <body>
+    <h1>Course Resgistration Form</h1>
+    <form action="https://thetapacademy.com/">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="fName">First Name*</label></td>
+            <td>
+              <input
+                type="text"
+                name="fName"
+                id="fName"
+                required
+                placeholder="your first name"
+              />
+              <p>Enter your firstname</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="sName">Surname</label></td>
+            <td>
+              <input
+                type="text"
+                name="sName"
+                id="sName"
+                placeholder="your last name"
+              />
+              <p>Enter your surname</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mobile">Mobile Number*</label></td>
+            <td>
+              <input
+                type="tel"
+                name="mobile"
+                id="mobile"
+                required
+                placeholder="your mobile number"
+              />
+              <p>Enter your Mobile number</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email*</label></td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="your@gmail.com"
+              />
+              <p>Enter your Email here</p>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/14090/14090371.png"
+                alt=""
+                class="correct"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/6711/6711656.png"
+                class="wrong"
+                alt=""
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password*</label></td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$"
+                title="Password must contain at least 8 characters, including uppercase, lowercase, number and special character"
+                placeholder="Min 6 characters"
+                minlength="8"
+              />
+              <p>
+                Password must contain at least 8 characters, including
+                uppercase, lowercase, number and special character
+              </p>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/14090/14090371.png"
+                class="correct"
+                alt=""
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/6711/6711656.png"
+                class="wrong"
+                alt=""
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="cpassword">Confirm Password*</label></td>
+            <td>
+              <input
+                type="password"
+                name="cpassword"
+                id="cpassword"
+                required
+                placeholder="Re-enter password"
+              />
+              <p>Enter your confirm password</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date of Birth*</label></td>
+            <td>
+              <input
+                type="date"
+                name="dob"
+                id="dob"
+                required
+                placeholder="mm/dd/yyyy"
+              />
+              <p>Enter your DOB</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="age">Age*</label></td>
+            <td>
+              <input
+                type="number"
+                name="age"
+                id="age"
+                required
+                placeholder="18-60"
+                max="60"
+                min="18"
+              />
+              <p>Enter your age here</p>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/14090/14090371.png"
+                class="correct"
+                alt=""
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/6711/6711656.png"
+                class="wrong"
+                alt=""
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender*</label></td>
+            <td>
+              <input type="radio" name="gender" id="gender" />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="gender" />
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="gender" />
+              <label for="others">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="country">Select Country*</label></td>
+            <td>
+              <select name="country" id="country" required>
+                <option value="">-----Select-----</option>
+                <option value="INDIA">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="ITALY">Italy</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="picture">Upload Picture*</label></td>
+            <td><input type="file" name="picture" id="picture" required /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td><label for="course">Select Course*</label></td>
+            <td>
+              <select name="course" id="course" required>
+                <option value="">-----Select-----</option>
+                <option value="PYTHON">Python</option>
+                <option value="JAVA">Java</option>
+                <option value="DATA SCIENCE">Data Science</option>
+                <option value="FULL STACK">Full Stack</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mode">Delivery Mode*</label></td>
+            <td>
+              <input type="radio" name="mode" id="online" />
+              <label for="online">Online</label>
+              <input type="radio" name="mode" id="offline" />
+              <label for="offline">Offline</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="institude">Institude Name</label></td>
+            <td><h2>TAP ACADEMY</h2></td>
+          </tr>
+          <tr>
+            <td><label for="comments">Comments</label></td>
+            <td>
+              <textarea
+                name="comments"
+                id="comments"
+                placeholder="Any additional comments or question..."
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <button type="submit">Submit Resgistration</button>
+      <button type="reset">Clear Form</button>
+    </form>
+  </body>
+</html>
